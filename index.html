@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header-box">
+            <h1>Sign Up</h1>
+            <p>It is free and only takes a minute</p>
+        </div>
+        <form class="personal-info-box">
+            <!-- first name -->
+            <input type="text" id="Fname" placeholder="Enter Your Firstname">
+            <!--last name  -->
+            <input type="text" id="Lname" placeholder="Enter Your Last Name">
+            <span id="fname-error"></span>
+            <span id="lname-error"></span><br>
+            <!-- sex -->
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="male">Male</label>
+            
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="female">Female</label><br>
+            
+            <span id="genderError"></span>
+            <!-- nickname -->
+            <input type="text" id="nickname" placeholder="Enter Your Nickname">
+            
+            <span id="nickname-error"></span> <br>
+
+            <!-- password -->
+            <input type="password" id="password"  placeholder="Enter Password">
+            
+            <!-- confirm password -->
+            <input type="password" id="confpassword" placeholder="Confirm Password"><br>
+            
+            <span id="passwordError"></span>
+            <span id="confpasswordError"></span>
+            <!-- country -->
+            <select name="countries" id="countries">
+                <option value="Select Country">Select Your Country</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Egypt">Egypt</option>
+                <option value="Cameroun">Cameroun</option>
+                <option value="South Africa">South Africa</option>
+                <option value="Ghana">Ghana</option>
+            </select> <br>
+           
+            <span id="errorCountry"></span> <br>
+
+            <input type="checkbox" id="mails" name="mails">
+           <label for="mails">Get Our Latest News About The New Stocks</label><br>
+
+            <button class="sign-up" id="signUp">Sign Up</button>
+            <p class="terms-condition"> By Clicking the Sign Up button, you agree to our <br> <a href="#">Terms</a> and <a href="#">Conditions</a></p>
+        </form>
+        <p class="details">
+            Already Have An Account? <a href="#">Log In</a> 
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
